@@ -8,5 +8,7 @@
   },
   "type": "module",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "private": true,
+  "publishConfig":{"access": "restricted"}
 }
