@@ -10,5 +10,5 @@
   "author": "",
   "license": "ISC",
   "private": true,
-  "publishConfig":{"access": "restricted"}
+  "publishConfig":{"access": "public"}
 }
