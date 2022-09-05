@@ -9,6 +9,6 @@
   "type": "module",
   "author": "",
   "license": "ISC",
-  "private": true,
+  "private": false,
   "publishConfig":{"access": "public"}
 }
