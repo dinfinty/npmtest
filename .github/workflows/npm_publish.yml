@@ -1,0 +1,21 @@
+on:
+  push:
+    branches: - master
+    workflow_despatch:  
+name: Publish to NPM
+jobs:
+  publish:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+          registry-url: https://registry.npmjs.org
+          cache: "npm"
+      - name: Publish
+        run: |
+          npm config set //registry.npmjs.org/:_authToken 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
+          npm ci
+          npm publish
