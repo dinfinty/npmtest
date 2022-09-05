@@ -17,5 +17,5 @@ jobs:
       - name: Publish
         run: |
           npm config set //registry.npmjs.org/:_authToken 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
-          npm ci
+          npm i
           npm publish
