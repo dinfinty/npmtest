@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: "16"
           registry-url: https://registry.npmjs.org
-          cache: "npm"
       - name: Publish
         run: |
           npm config set //registry.npmjs.org/:_authToken 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
