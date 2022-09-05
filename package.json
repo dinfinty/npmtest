@@ -1,6 +1,6 @@
 {
-  "name": "@primeular\npmtest78611",
-  "version": "1.0.0",
+  "name": "npmtest78611",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,5 +10,7 @@
   "author": "",
   "license": "ISC",
   "private": false,
-  "publishConfig":{"access": "public"}
+  "publishConfig": {
+    "access": "public"
+  }
 }
