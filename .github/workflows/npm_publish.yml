@@ -1,8 +1,7 @@
 on:
   push:
-    branches: 
-       - master
-  workflow_despatch:  
+    branches: [master]
+  workflow_dispatch:  
 name: Publish to NPM
 jobs:
   publish:
