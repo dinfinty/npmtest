@@ -1,6 +1,6 @@
 on:
   pull_request:
-    branches: [master]
+    branches: [newbranh]
     types:
       - closed
 name: Publish to NPM
