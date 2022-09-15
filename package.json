@@ -11,6 +11,11 @@
   "license": "ISC",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "dependencies": {
+    "@firefly-exchange/firefly-client": "^1.0.37"
   }
-  
 }
