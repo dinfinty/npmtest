@@ -1,0 +1,82 @@
+/* Webfont: FireflyDisplay-Bold */
+@font-face {
+    font-family: 'FireflyDisplay';
+    font-display: swap;
+    src: url('FireflyDisplay-Bold.eot'); /* IE9 Compat Modes */
+    src: url('FireflyDisplay-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FireflyDisplay-Bold.woff') format('woff'), /* Modern Browsers */
+         url('FireflyDisplay-Bold.woff2') format('woff2'), /* Modern Browsers */
+         url('FireflyDisplay-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: FireflyDisplay-BoldItalic */
+@font-face {
+    font-family: 'FireflyDisplay';
+    font-display: swap;
+    src: url('FireflyDisplay-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('FireflyDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FireflyDisplay-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('FireflyDisplay-BoldItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('FireflyDisplay-BoldItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: italic;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: FireflyDisplay-Medium */
+@font-face {
+    font-family: 'FireflyDisplay';
+    font-display: swap;
+    src: url('FireflyDisplay-Medium.eot'); /* IE9 Compat Modes */
+    src: url('FireflyDisplay-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FireflyDisplay-Medium.woff') format('woff'), /* Modern Browsers */
+         url('FireflyDisplay-Medium.woff2') format('woff2'), /* Modern Browsers */
+         url('FireflyDisplay-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: FireflyDisplay-MediumItalic */
+@font-face {
+    font-family: 'FireflyDisplay';
+    font-display: swap;
+    src: url('FireflyDisplay-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('FireflyDisplay-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FireflyDisplay-MediumItalic.woff') format('woff'), /* Modern Browsers */
+         url('FireflyDisplay-MediumItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('FireflyDisplay-MediumItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: italic;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: FireflyDisplay-Regular */
+@font-face {
+    font-family: 'FireflyDisplay';
+    font-display: swap;
+    src: url('FireflyDisplay-Regular.eot'); /* IE9 Compat Modes */
+    src: url('FireflyDisplay-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FireflyDisplay-Regular.woff') format('woff'), /* Modern Browsers */
+         url('FireflyDisplay-Regular.woff2') format('woff2'), /* Modern Browsers */
+         url('FireflyDisplay-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: FireflyDisplay-RegularItalic */
+@font-face {
+    font-family: 'FireflyDisplay';
+    font-display: swap;
+    src: url('FireflyDisplay-RegularItalic.eot'); /* IE9 Compat Modes */
+    src: url('FireflyDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('FireflyDisplay-RegularItalic.woff') format('woff'), /* Modern Browsers */
+         url('FireflyDisplay-RegularItalic.woff2') format('woff2'), /* Modern Browsers */
+         url('FireflyDisplay-RegularItalic.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}

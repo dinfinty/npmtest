@@ -1,20 +1,27 @@
 on:
   pull_request:
-    branches: [newbranh]
+    branches: [master]
     types:
       - closed
-name: Publish to NPM
 jobs:
-  publish:
+  deploy:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+      # Run your project's build step
+      # - name: Build
+      #   run: npm install && npm run build
+      - name: Publish
+        uses: cloudflare/pages-action@1
         with:
-          node-version: "16"
-          registry-url: https://registry.npmjs.org
-      - run: yarn install --immutable
-      - run: npm publish 
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          apiToken: ${{ secrets.CF_DOCS_FFLY_CLIENT_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'firefly-client-docs'
+          directory: './'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

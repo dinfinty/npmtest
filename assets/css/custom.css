@@ -1,0 +1,544 @@
+
+/* PARITY STYLING -- https://www.parity.io/assets/css/theme-parity.css?v=1c871864d6 */
+@import url("landing/fonts.min.css"); 
+:root {
+    --theme-color: #FFD965;
+    --heading-color: #212327;
+    --text-color: #3B3C44;
+    --links: #267CF4;
+    --code-bg: #272B30;
+    --search-bg: #F6F6F6;
+    --hover-tabs: rgba(38, 124, 244, 0.04);
+
+}
+
+*{
+    font-family: 'FireflyDisplay';
+    font-style: normal;
+    font-feature-settings: 'salt' on, 'ss01' on, 'ss03' on, 'ss04' on, 'liga' off;
+
+}
+
+
+/* Make the whole site have larger text*/
+body {
+    background-color: #FFFFFF;
+    font-size: 1em;
+    line-height: 1.85714286em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-color);
+}
+
+.firefly-doc-nav a {
+    display: flex;
+    text-decoration-line: none;
+    justify-content: center;
+}
+.search .input-wrap{
+    justify-content: center;
+}
+ .firefly-doc-nav img {
+    height: 34px;
+    margin: 10px 10px;
+}
+
+ .firefly-doc-nav h2 {
+    margin-top: 20px;
+    color:  #5D616C;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'salt' on, 'ss01' on, 'ss03' on, 'ss04' on, 'liga' off;
+}
+
+.sidebar {
+    background-color: #fff;
+    font-size: 1rem;
+    width: 260px;
+}
+
+input[type="search"], 
+.markdown-section pre,
+.markdown-section pre > code {
+    background-color: #272B30;
+}
+
+input[type="search"]{
+    background-color: var(--search-bg);
+    max-width: 212px;
+    height: 40px;
+    border-radius: 4px;
+}
+body .search input{
+    padding-left: 20px;
+    padding-right: 15px;
+}
+body .search input[type="search"]:focus {
+    color: var(--text-color);
+    box-shadow: none;
+    border: 1px solid var(--search-bg);
+
+}
+input[type="search"]::placeholder{
+    color: #3B3C44;
+}
+.results-panel.show {
+    /* max-width: 240px; */
+    padding-left: 10px;
+}
+.search a:hover {
+    color: var(--heading-color);
+}
+.sidebar{
+    border-right: 1px solid #F2F2F2;
+}
+body .search{
+    border-bottom: 1px solid #F2F2F2;
+    padding-bottom: 20px;
+}
+body .search a{
+    color: var(--text-color);
+}
+.search .search-keyword{
+    color: var(--links);
+}
+.clear-button svg circle {
+    fill: #EB5A5A;
+}
+.sidebar-toggle {
+    width: unset;
+}
+
+.sidebar-toggle span {
+    width: 24px;
+    height: 4px;
+}
+main>.sidebar-toggle{
+    display: none;
+}
+body .sidebar ul li a{
+    color: var(--text-color);
+    padding-left: 31px;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+}
+body .sidebar ul li a strong{
+    font-size: 14px;
+    font-weight: 600;
+}
+body .sidebar ul li a:hover,
+body .sidebar ul li a:hover:focus,
+body .sidebar ul li a:focus{
+    text-decoration: none;
+    background-color:  #F6F6F6;
+    border-radius: 4px;
+    color: #3B3C44;
+}
+
+body .sidebar ul li p a:hover,
+body .sidebar ul li p a:hover:focus,
+body .sidebar ul li p a:focus{
+    text-decoration: none;
+    background-color:  transparent;
+    border-radius: 4px;
+    color: #3B3C44;
+}
+
+.sidebar ul li.active > a {
+    color: var(--links);
+    background-color: var(--hover-tabs);
+    border-radius: 4px;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5 {
+    /* font-family: 'ManifoldCF', 'Helvetica', 'Arial', sans-serif; */
+    font-weight: 700 !important;
+    /* font-variant-ligatures: common-ligatures; */
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,
+.h1 {
+  font-size: 3.14285714em;
+  line-height: 1.31818182em;
+}
+h2,
+.h2 {
+  font-size: 2.35714286em;
+  line-height: 1.36363636em;
+}
+h3,
+.h3 {
+  font-size: 1.78571429em;
+  line-height: 1.5em;
+}
+h4,
+.h4 {
+  font-size: 1.35714286em;
+  line-height: 1.36842105em;
+}
+h5,
+.h5 {
+  font-size: 1em;
+  line-height: 1.85714286em;
+}
+h6,
+.h6 {
+  font-size: 0.85714286em;
+  line-height: 2.16666667em;
+}
+.lead {
+  font-size: 1.35714286em;
+  line-height: 1.68421053em;
+}
+@media all and (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 2.35714286em;
+    line-height: 1.36363636em;
+  }
+  h2,
+  .h2 {
+    font-size: 1.78571429em;
+    line-height: 1.5em;
+  }
+  h3,
+  .h3 {
+    font-size: 1.35714286em;
+    line-height: 1.85714286em;
+  }
+  .lead {
+    font-size: 1.35714286em;
+    line-height: 1.36842105em;
+  }
+}
+
+/* CSS for editor div to make sure it uses the full height */
+.editor {
+    height: calc(100vh - 25px);
+    overflow: hidden;
+}
+
+.editor-bar {
+    height: 25px;
+    font-size: 14px;
+}
+
+.editor-button {
+    background-color: #1e1e1e;
+    margin-left: 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding-top: 50px;
+    margin-top: -50px;
+}
+
+.editor-button-selected {
+    background-color: #3e3e3e;
+}
+
+/* Add separation between the Editor and the tutorial */
+.lesson {
+    border-right: 1px solid rgba(0,0,0,0.07);
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.code {
+    padding-right: 30px;
+}
+
+/* When the page does not have code, this style is used to hold the main content */
+.fullpage {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Responsive Two Column Layout */
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1024px) {
+    .column {
+        width: 100%;
+        overflow-y: initial;
+        height: initial;
+    }
+}
+/* End Responsive Layout */
+
+.content {
+    padding-left: 10px;
+    padding-top: 0px;
+    left: 260px;
+}
+
+.markdown-section {
+    max-width: 100%;
+    padding: 0;
+}
+
+/* Styling for Cover Page Buttons */
+
+section.cover .cover-main > p:last-child a:first-child {
+    background-color: var(--links);
+    color: #FAFAFA;
+}
+
+section.cover .cover-main > p:last-child a:first-child:hover{
+    opacity: 0.8;
+}
+section.cover .cover-main > p:last-child a{
+    border-color: #E7E7E7;
+    border-radius: 48px;
+    border-style: solid;
+    border-width: 1px;
+    color: #3B3C44;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    padding: 0.813em 2.2789rem ;
+}
+section.cover .cover-main > p:last-child a:last-child {
+    background-color: unset;
+    color: #3B3C44;
+    display: inline-flex;
+    align-items: center;
+    gap: 6.5px;
+    min-width: 160px;
+    margin-left: -3px;
+}
+
+/* End Styling for Cover Page Buttons */
+
+/* Custom Styling for other parts of markdown */
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4,
+.markdown-section blockquote {
+    color: #989898;
+}
+
+.markdown-section strong,
+.markdown-section em {
+    color: var(--links);
+}
+
+.markdown-section a {
+    font-weight: unset;
+    color:  var(--heading-color);
+    
+}
+.anchor span{
+    color:  var(--heading-color);
+}
+/* End custom markdown styling */
+
+/* Custom Styling For Code Blocks */
+
+.token.function {
+    color: #dcdca9;
+}
+
+.token.keyword {
+    color: #569cd6;
+}
+
+.markdown-section code {
+    background-color: var(--code-bg);
+    color: #d4d4d4;
+}
+.markdown-section pre > code {
+    color: #d4d4d4;
+}
+
+.token.punctuation {
+    color: #d4d4d4;
+}
+
+.token.comment {
+    color: #618a50;
+}
+
+.token.string {
+    color: #cd917a;
+}
+
+.token.number {
+    color: #b6cda9;
+}
+body .monaco-editor, 
+body .monaco-editor-background,
+body .monaco-editor .inputarea.ime-input {
+    background-color: #272B30;
+}
+body .monaco-editor .margin{
+    background-color: #272B30;
+}
+/* End Custom Styling for Code Blocks */
+
+/* Start Custom Styling for Pagination */
+
+.pagination-item-label {
+    color: var(--links);
+    font-size: 1.1em !important;
+    font-weight: 700;
+    /* padding-bottom: 0.5em; */
+}
+.pagination-item-title {
+    font-size: 1.1em !important;
+}
+section.cover h1{
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+}
+section.cover.show{
+    background:  #FAFAFA !important;
+    background-color:  #FAFAFA !important;
+
+}
+section.cover p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #5D616C;
+    margin-bottom: 32px;
+    letter-spacing: -0.01em;
+}
+section.cover .cover-main > p:last-child a:last-child:hover{
+    color: #3B3C44;
+    opacity: 0.7;
+}
+.github-corner svg path:nth-child(2),
+.github-corner svg path:nth-child(3){
+    fill: #111215;
+}
+/* End Custm Styling for Pagination */
+
+/*next and previous links*/
+body .pagination-item:not(:last-child) a .pagination-item-label, 
+body  .pagination-item:not(:last-child) a .pagination-item-subtitle,
+body  .pagination-item:not(:last-child) a .pagination-item-title {
+    opacity: 1;
+}
+body  .pagination-item:last-child .pagination-item-label, 
+body .pagination-item:not(:last-child) a:hover .pagination-item-label {
+    opacity: 1;
+}
+body  .pagination-item .pagination-item-title{
+    display: none;
+}
+/*next and previous links*/
+.markdown-section p, .markdown-section ul, .markdown-section ol{
+    font-size: 15px;
+}
+
+.pagination-item a:hover {
+    opacity: 0.7;
+}
+body .pagination-item a:hover .pagination-item-title {
+    text-decoration: none;
+}
+
+/* .markdown-section p{
+    line-height: 20px;
+} */
+/*copying code*/
+button.docsify-copy-code-button {
+    background: #3B3C44;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 20px;
+    color: #E7E7E7;
+    padding: 2px 8px;
+    top: 10px;
+    right: 8px;
+    text-transform: uppercase;
+}
+.docsify-copy-code-button .error, .docsify-copy-code-button .success{
+    padding: 2px 10px !important;
+    border-radius: 28px;
+}
+pre:after {
+    top: 5px;
+}
+/*copying code*/
+
+/*top right git icon*/
+.ready a.github-corner{
+    background-image: url(../images/git.svg);
+    width: 100px;
+    height: 24px;
+    background-repeat: no-repeat;
+    right: 33px;
+    top: 8px;
+}
+.ready a.github-corner svg{
+    display: none;
+}
+.ready a.github-corner:hover,
+.ready a.github-corner:focus,
+.ready a.github-corner:hover:focus{
+    opacity: 0.8;
+}
+/*top right git icon*/
+/*hiding potential solution*/
+div#editor_bar {
+    display: none;
+}
+.editor {
+    height: calc(100vh - 0px);
+    overflow: hidden;
+}
+/*hiding potential solution*/
+
+/*left side menu*/
+.sidebar ul {
+    margin: 0 0 0 0px;
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+.sidebar li{
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+/*left side menu*/
+.markdown-section code {
+    padding-top: 1px;
+}
+.markdown-section pre {
+    border-radius: 4px;
+}
+/*right code side*/
+.code.column {
+    padding-right: 0px;
+}
+/*right code side*/
