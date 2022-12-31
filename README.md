@@ -1,2 +1,2 @@
 # npmtest
-[![pypi version](https://img.shields.io/pypi/v/firefly?logo=pypi)](https://pypi.org/project/firefly/)
+[![pypi version](https://img.shields.io/pypi/v/firefly-exchange-library?logo=pypi)](https://pypi.org/project/firefly-exchange-library/)
